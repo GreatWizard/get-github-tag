@@ -1,0 +1,44 @@
+{
+  "name": "get-github-tag",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "bin": "./bin/get-github-tag",
+  "files": [
+    "bin/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GreatWizard/get-github-tag.git"
+  },
+  "author": "Guillaume Gérard <guillaume.gerard88@gmail.com>",
+  "license": "MIT",
+  "description": "Retrieve a github tag that can be used to reference the latest build for that keyword or version.",
+  "bugs": {
+    "url": "https://github.com/GreatWizard/get-github-tag/issues"
+  },
+  "homepage": "https://github.com/GreatWizard/get-github-tag#readme",
+  "scripts": {
+    "lint:js": "eslint .",
+    "test": "qunit tests/**/*-test.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "execa": "^2.0.2",
+    "get-port": "^5.0.0",
+    "prettier": "^1.18.2",
+    "qunit": "~2.9.2",
+    "qunit-eslint": "^2.0.0",
+    "rsvp": "^4.8.5",
+    "tmp": "^0.1.0"
+  },
+  "engines": {
+    "node": "8.* || >= 10.*"
+  }
+}
