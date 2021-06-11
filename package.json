@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/GreatWizard/get-github-tag.git"
   },
-  "author": "Guillaume Gérard <guillaume.gerard88@gmail.com>",
+  "author": {
+    "name": "Guillaume Gérard",
+    "url": "https://guillaume.sh"
+  },
   "license": "MIT",
   "description": "Retrieve a github tag that can be used to reference the latest build for that keyword or version.",
   "bugs": {
