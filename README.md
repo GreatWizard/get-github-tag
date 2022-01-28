@@ -1,38 +1,37 @@
 # get-github-tag
 
-[![Build Status](https://travis-ci.org/GreatWizard/get-github-tag.svg?branch=master)](https://travis-ci.org/GreatWizard/get-github-tag)
+[![CI](https://github.com/GreatWizard/get-github-tag/actions/workflows/ci.yml/badge.svg)](https://github.com/GreatWizard/get-github-tag/actions/workflows/ci.yml)
 
-Retrieve a github tag that can be used to reference the latest build for that
-keyword or version.
+Retrieve a github tag that can be used to reference the latest build for that keyword or version.
 
 ## Usage
 
 ### Command Line API
 
-```
-npx get-github-tag emberjs data canary
+```shell
+npx get-github-tag emberjs data beta
 ```
 
 Will print out:
 
-```
-The git tag for the latest emberjs/data's canary is:
+```shell
+The git tag for the latest emberjs/data's beta is:
 
-        v3.12.0-canary.2
+	v4.2.0-beta.0
 ```
 
 If you'd like to update `ember-data` in your `package.json` with the new tag, you can use the `--write` option:
 
-```
-npx get-github-tag emberjs data canary --write ember-data
+```shell
+npx get-github-tag emberjs data beta --write ember-data
 ```
 
-### Progamatic API
+### Programmatic API
 
 ```js
-const getTagFor = require("get-github-tag");
+const getTagFor = require('get-github-tag');
 
-getTagFor("emberjs", "data", "canary").then(tag => {
+getTagFor('emberjs', 'data', 'beta').then((tag) => {
   // use the tag here
 });
 ```

@@ -2,7 +2,7 @@
   "name": "get-github-tag",
   "version": "1.1.0",
   "main": "src/index.js",
-  "bin": "./bin/get-github-tag",
+  "bin": "./bin/get-github-tag.js",
   "files": [
     "bin/",
     "src/"
@@ -22,26 +22,28 @@
   },
   "homepage": "https://github.com/GreatWizard/get-github-tag#readme",
   "scripts": {
+    "start": "node bin/get-github-tag.js",
     "lint": "eslint .",
     "test": "qunit tests/**/*-test.js"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.7"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "execa": "^2.0.2",
-    "get-port": "^5.0.0",
-    "prettier": "^1.18.2",
-    "qunit": "~2.9.2",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "execa": "^5.1.1",
+    "get-port": "^5.1.1",
+    "prettier": "^2.5.1",
+    "qunit": "^2.17.2",
     "qunit-eslint": "^2.0.0",
     "rsvp": "^4.8.5",
-    "tmp": "^0.1.0"
+    "tmp": "^0.2.1"
   },
   "engines": {
-    "node": "8.* || >= 10.*"
+    "node": "10.* || 12.* || 14.* || >= 16"
   }
 }

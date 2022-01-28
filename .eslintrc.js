@@ -1,25 +1,27 @@
 module.exports = {
-  root: true,
-  parserOptions: {
-    sourceType: "script",
-    ecmaVersion: 2018
-  },
-  plugins: ["node", "prettier"],
-  extends: ["eslint:recommended", "plugin:node/recommended"],
   env: {
-    browser: false,
-    node: true
+    es2021: true,
+    node: true,
   },
-  rules: {
-    "prettier/prettier": "error"
+  extends: [
+    'eslint:recommended',
+    'plugin:node/recommended',
+    'plugin:import/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
+  parserOptions: {
+    ecmaVersion: 13,
   },
+  rules: {},
+
   overrides: [
     // test files
     {
-      files: ["tests/**/*.js"],
+      files: ['tests/**/*.js'],
       env: {
-        qunit: true
-      }
-    }
-  ]
-};
+        qunit: true,
+      },
+    },
+  ],
+}
