@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/GreatWizard/get-github-tag#readme",
   "scripts": {
-    "lint:js": "eslint .",
+    "lint": "eslint .",
     "test": "qunit tests/**/*-test.js"
   },
   "dependencies": {

@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: master
+  pull_request: {}
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  org:
+    uses: GreatWizard/workflows/.github/workflows/js--lint-tests.yml@master
+    with:
+      package-manager: yarn
